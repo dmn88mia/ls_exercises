@@ -1,16 +1,25 @@
 # Understand the problem : 
-# return the amount of chars in a word or words without counting the spaces
-# Then in a puts print out the chars amount and print the word or words.
+# Create method that returns the power of a number entered by a user.
 
 # Set up your test cases
-# multiply(1, 3) => 3
+# power_to_nth(3,3)
+# => 27
 
 # Describe your inputs, outputs, and data structures
 # input will be two integers
-# the return value of the two integers multiplied
+# the return value will be the power to the nth number
 
 
 # Describe your algorithm
+# map through an array using the power parameter,this will be used to multiply
+# the number n times depedning on the integer entered by the user for power.
+# Using the multiply method I use result which has been set as 1 to multpily 
+# that by the number on which is the first parameter. That result will be the
+# new value of result which then we multiply by the 1st parameter entered in the
+# power_to_nth and so on until the itereation is complete, leaving us with an
+# array of numbers that have been multiplied by the 1st parameter in power_to_nth.
+# Lastly I use pop to grab the last number in the array and set it as the final 
+# result for the method return value. 
 
 # Squaring an Argument
 
@@ -30,13 +39,6 @@ def multiply(num1, num2)
   num1 * num2
 end
 
-# def square(num)
-#   multiply(num, num)
-# end
-
-# square(3) 
-# #=> 9
-
 def power_to_nth(num, power)
   counter = 1
   result = 1
@@ -53,10 +55,6 @@ def power_to_nth(num, power)
   result
 end
 
-# p power_to_nth(5,5)
-
-
-# p arr << num
 def power_to_nth(num, power)
   result = 1
   final_result = (1..power).map { |n| result = multiply(result, num) }.pop

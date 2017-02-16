@@ -14,10 +14,6 @@
 # 6 numbers I will remove and save the last number in the array and with that
 # use include? to see if the number was mentioned in the first 5.
 
-# Even Numbers
-
-# Print the even numbers from 1 to 99, inclusive. All numbers should be printed on separate lines.
-
 # -------------------------------------------------------------------------------------
 # Begin coding:
 

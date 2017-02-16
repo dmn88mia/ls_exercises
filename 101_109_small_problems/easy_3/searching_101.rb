@@ -1,9 +1,13 @@
 # Understand the problem : 
-# print even numbers from 1 to 99
+# print whether or not the last number is included in the array
 
 # Set up your test cases
 
 # Describe your inputs, outputs, and data structures
+# An array
+# Outputs a msg that states whether the last num is in the
+# the array.
+
 
 # Describe your algorithm
 # Create a loop that pushes the the 6 numbers into an array. After gathering the

@@ -3,37 +3,23 @@
 # Then in a puts print out the chars amount and print the word or words.
 
 # Set up your test cases
-# word_s = 'walk' 
-# count_char(word_s) => 4
-# word_s = "walk, don't run"
-# count_char(word_s) => 13
+# multiply(1, 3) => 3
 
 # Describe your inputs, outputs, and data structures
-# input will be a string
-# out put will be the number of chars in that string
+# input will be two integers
+# the return value of the two integers multiplied
 
 
 # Describe your algorithm
-# iterate through the string after turning it into an array that deletes the
-# spaces, then count the number of chars and return that number.
+# multiply the parameters
 
-# Counting the Number of Characters
+# Multiplying Two Numbers
 
-# Write a program that will ask a user for an input of a word or multiple words and give back the number of characters. Spaces should not be counted as a character.
+# Create a method that takes two arguments, multiplies them together, and returns the result.
 
-# input:
+# Example:
 
-# Please write word or multiple words: walk
-# output:
-
-# There are 4 characters in "walk".
-# input:
-
-# Please write word or multiple words: walk, don't run
-# output:
-
-# There are 13 characters in "walk, don't run".
-
+# multiply(5, 3) == 15
 # -------------------------------------------------------------------------------------
 # Begin coding:
 
@@ -41,11 +27,11 @@ def multiply(num1, num2)
   num1 * num2
 end
 
-p arr2 = multiply(1, 3)
+p multiply(1, 3)
 
 # Further Exploration
 
 # For fun: what happens if the first 
 # argument is an Array? What do you think is happening here?
 # returns a new array containing the  elements that were multiplied 
-# by the 2nd arguement. example: [1,3] * 3 = [1,3,1,3,1,3]
+# by the 2nd argument. example: [1,3] * 3 = [1,3,1,3,1,3]

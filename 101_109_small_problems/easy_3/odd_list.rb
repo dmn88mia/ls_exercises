@@ -1,25 +1,19 @@
 # Understand the problem : 
-# Create method that returns the power of a number entered by a user.
+# Return the 1,3,5 etc values in an arr given
 
 # Set up your test cases
-# power_to_nth(3,3)
-# => 27
+# oddities([2, 3, 4, 5, 6]) == [2, 4, 6]
+# oddities(['abc', 'def']) == ['abc']
+# oddities([123]) == [123]
+# oddities([]) == []
 
 # Describe your inputs, outputs, and data structures
-# input will be two integers
-# the return value will be the power to the nth number
-
+# input will be an array
+# output will be the 1,3,5th on so on elements in the array
 
 # Describe your algorithm
-# map through an array using the power parameter,this will be used to multiply
-# the number n times depedning on the integer entered by the user for power.
-# Using the multiply method I use result which has been set as 1 to multpily 
-# that by the number on which is the first parameter. That result will be the
-# new value of result which then we multiply by the 1st parameter entered in the
-# power_to_nth and so on until the itereation is complete, leaving us with an
-# array of numbers that have been multiplied by the 1st parameter in power_to_nth.
-# Lastly I use pop to grab the last number in the array and set it as the final 
-# result for the method return value. 
+# iterate through the array and if the index is even, save it to
+# an new array the will be returned. 
 
 # Odd Lists
 

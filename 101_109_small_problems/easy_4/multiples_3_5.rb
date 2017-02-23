@@ -1,20 +1,20 @@
 # Understand the problem : 
-# Write a method that takes two strings as arguments, 
-# determines the longest of the two strings, and then returns
-# the result of concatenating the shorter string, the longer 
-# string, and the shorter string once again.
+# Write a method that searches for all multiples of 3 or 5 that lie between 1 and some other number, 
+# and then computes the sum of those multiples. For instance, if the supplied number is 20, the result should 
+# be 98 (3 + 5 + 6 + 9 + 10 + 12 + 15 + 18 + 20).
 
 # Set up your test cases
-# short_long_short('abc', 'defgh') == "abcdefghabc"
-# short_long_short('abcde', 'fgh') == "fghabcdefgh"
-# short_long_short('', 'xyz') == "xyz"
+# multisum(3) == 3
+# multisum(5) == 8
+# multisum(10) == 33
+# multisum(1000) == 234168
 
 # Describe your inputs, outputs, and data structures
-# input will be two strings of different lengths
-# the return value will be the shorter str, longer, shorter by concatenating.
+# input will be an integer
+# output will be multipes of 3 and 5 all added up.
 
 # Describe your algorithm
-# Adding the short with the long and then the short string again for one string return value
+# iterate from 1 to given number, select n if divisable by 3 or 5, then add all the integers from the selected.
 
 # Multiples of 3 and 5
 

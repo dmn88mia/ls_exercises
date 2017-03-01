@@ -1,18 +1,21 @@
 # Understand the problem : 
-# Write two methods that each take a time of day in 24 hour format, and return the number of minutes before and 
-# after midnight, respectively. Both methods should return a value in the range 0..1439.
+# Write a method that returns that string with all of the non-alphabetic characters replaced by spaces. 
+# If one or more non-alphabetic characters occur in a row, you should only have one space in the result
+# (the result should never have consecutive spaces).
 
 # Set up your test cases
-# p swap('Oh what a wonderful day it is') #== 'hO thaw a londerfuw yad ti si'
-# p swap('Abcde') #== 'ebcdA'
-# p swap('a') #== 'a'
+# cleanup("---what's my +*& line?") == ' what s my line '
 
 # Describe your inputs, outputs, and data structures
 # input will be a string
-# output: a string that has changed each words first char to its last char and vice versa
+# output: a string that has no spaces in a row
 
 # Describe your algorithm
-# Split the string, save the first and last chars, then assign the first to the last char and vice versa and join the new array for a complete string.
+# Iterate through the str.chars. If the char is a letter then return a the char, if not then return a space.
+# Next: iterate through the new array containing spaces and letters only. If the char and the next index are spaces
+# then return the word 'delete'. This will leave an array that contains no spaces in a row. Only the word 'delete'
+# will be repeated in a row, 2 or more times. Then call the delete method to delete the string 'delete'. Lastly
+# join the array for our desired output
 
 # Clean up the words
 

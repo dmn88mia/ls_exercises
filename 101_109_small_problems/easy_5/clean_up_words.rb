@@ -34,7 +34,7 @@ APLHABET = ('a'..'z').to_a + ('A'..'Z').to_a
 
 def cleanup(str)
   str_spaces = str.chars.map { |char| APLHABET.include?(char) ? char : ' ' }
- p final_str = str_spaces.map.with_index { |char, idx| char == ' ' && str_spaces[idx + 1] == ' ' ? 'delete' : char }
+  final_str = str_spaces.map.with_index { |char, idx| char == ' ' && str_spaces[idx + 1] == ' ' ? 'delete' : char }
   final_str.delete('delete')
   final_str.join
 end
